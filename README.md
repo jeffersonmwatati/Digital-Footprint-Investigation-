@@ -63,31 +63,31 @@ If the installation is successful, the terminal will display the installed ExifT
 
 ## 4. Create a Working Directory
 
-Create a folder for the practical:
-
+Create a folder for the practical on your desktop:
+Move to Desktop
 ```bash
-mkdir -p ~/Desktop/Metadata_Lab
+cd Desktop
+```
+
+Create the folder:
+```bash
+mkdir Metadata_Lab
 ```
 
 Navigate into the folder:
-
 ```bash
-cd ~/Desktop/Metadata_Lab
+cd Metadata_Lab
 ```
-
-**Note:** If your Kali desktop directory is unavailable, use `mkdir -p ~/Metadata_Lab` instead.
 
 ## 5. Add Sample Files
 
 Prepare the following sample files:
 
-- Two JPG/JPEG photographs.
+- One JPG/JPEG image.
 - One PNG image.
 - One MP4 video.
 
-You may use photographs taken with your phone or other sample media you have permission to examine.
-
-Transfer or copy all the files into the `Metadata_Lab` folder using the Kali Linux File Manager.
+You may use photographs taken with your phone or other sample media you have permission to examine. Transfer or copy all the files into the `Metadata_Lab` folder using the Kali Linux File Manager.
 
 ## 6. Verify the Sample Files
 
