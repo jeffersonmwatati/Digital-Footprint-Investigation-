@@ -116,7 +116,7 @@ Examine the output and identify:
 - The PNG image file.
 - The MP4 video file.
 - The file sizes and formats.
-
+<img src="img/fileproperties.png" alt="fileproperties" width="600" height="500">
 **Observation:** Record the file types and sizes. Note that a file extension does not always indicate its actual file format.
 
 ---
