@@ -61,6 +61,8 @@ exiftool -ver
 
 If the installation is successful, the terminal will display the installed ExifTool version.
 
+![Version](img/version.png)
+
 ## 4. Create a Working Directory
 
 Create a folder for the practical on your desktop:
