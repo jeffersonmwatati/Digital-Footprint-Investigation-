@@ -86,8 +86,8 @@ Inside `Metadata_Lab` folder Create the folder `sample-files` and Navigate into 
 mkdir sample-files
 cd sample-files
 ```
-![filenavigation](img/filenavigation.png)
-<img src="img/filenavigation.png" alt="filenavigation" width="500" height="400">
+
+<img src="img/filenavigation.png" alt="filenavigation" width="600" height="500">
 
 ## 5. Add Sample Files
 
