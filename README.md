@@ -7,8 +7,6 @@ The project explores how metadata can reveal valuable digital footprints, includ
 
 ## Practical Guide
 
-**Title:** Extracting Image and Video Metadata Using Kali Linux
-
 This practical demonstrates how to investigate digital files by extracting and examining embedded metadata to understand their properties and identify potentially useful forensic information.
 
 ### Objectives
@@ -28,10 +26,6 @@ By the end of this practical, you should be able to:
 - **Primary Tool:** ExifTool
 - **Investigation Area:** Digital Forensics
 - **Evidence Types:** Images and Videos
-
-## GitHub Topics
-
-`digital-forensics` `kali-linux` `exiftool` `metadata-analysis` `cybersecurity` `digital-footprints` `image-forensics` `video-forensics`
 
 ## Ethical Considerations
 
