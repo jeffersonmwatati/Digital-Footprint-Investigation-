@@ -50,6 +50,7 @@ Run the following command to install ExifTool:
 sudo apt update
 sudo apt install libimage-exiftool-perl -y
 ```
+![installexiftool](img/installexiftool.png)
 
 ## 3. Verify ExifTool Installation
 
@@ -117,6 +118,7 @@ Examine the output and identify:
 - The MP4 video file.
 - The file sizes and formats.
 <img src="img/fileproperties.png" alt="fileproperties" width="600" height="500">
+
 **Observation:** Record the file types and sizes. Note that a file extension does not always indicate its actual file format.
 
 ---
