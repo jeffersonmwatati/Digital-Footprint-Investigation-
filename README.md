@@ -87,7 +87,7 @@ mkdir sample-files
 cd sample-files
 ```
 ![filenavigation](img/filenavigation.png)
-<img src="img/filenavigation.png" alt="filenavigation" width="300" height="200">
+<img src="img/filenavigation.png" alt="filenavigation" width="500" height="400">
 
 ## 5. Add Sample Files
 
