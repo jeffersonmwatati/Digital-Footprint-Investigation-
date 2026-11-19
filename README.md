@@ -79,7 +79,7 @@ Navigate into the folder:
 cd Metadata_Lab
 ```
 
-Inside 'Metadata_Lab' folder Create the folder 'sample-files' and Navigate into the folder:
+Inside `Metadata_Lab` folder Create the folder `sample-files` and Navigate into the folder:
 ```bash
 mkdir sample-files
 cd sample-files
