@@ -30,7 +30,7 @@ By the end of this practical, you should be able to:
 ## Ethical Considerations
 
 All investigations should be conducted using legally obtained files and with appropriate authorization. Digital evidence should be handled responsibly to preserve its integrity and maintain privacy.
-# Step-by-Step Guide: Extracting Image and Video Metadata Using Kali Linux
+# Step-by-Step Guide
 
 ## 1. Start Kali Linux
 
