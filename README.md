@@ -116,16 +116,12 @@ Examine the output and identify:
 
 ---
 
-## Expected Outcome
+## Am still working on this project, soon will update with screenshots and all resources required........
 
-At the end of this section, you should have:
 
-1. Kali Linux running.
-2. ExifTool successfully installed.
-3. A working directory named `Metadata_Lab`.
-4. Two JPEG images, one PNG image, and one MP4 video.
-5. Identified and verified the actual file formats.
 
 ## Conclusion
 
 Metadata analysis is an important component of digital forensics. By using Kali Linux and ExifTool, investigators can uncover useful information embedded within multimedia files, helping them understand digital activities and establish potential investigative leads.
+
+## Prepared by Mr. Jefferson Mwatati
