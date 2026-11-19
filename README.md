@@ -89,26 +89,19 @@ Prepare the following sample files:
 
 You may use photographs taken with your phone or other sample media you have permission to examine. Transfer or copy all the files into the `Metadata_Lab` folder using the Kali Linux File Manager.
 
-## 6. Verify the Sample Files
+## 6. Verify the Sample Files and Identify the File Types
 
 Run:
-
 ```bash
 ls -lh
 ```
-
 This command lists the files in the working directory, together with their sizes and permissions.
 
-## 7. Identify the File Types
-
 Run:
-
 ```bash
 file *
 ```
-
 Examine the output and identify:
-
 - The JPEG image files.
 - The PNG image file.
 - The MP4 video file.
