@@ -92,7 +92,7 @@ Prepare the following sample files:
 - One PNG image.
 - One MP4 video.
 
-You may use photographs taken with your phone or other sample media you have permission to examine. Transfer or copy all the files into the `Metadata_Lab` folder using the Kali Linux File Manager.
+You may use photographs taken with your phone or other sample media you have permission to examine. Transfer or copy all the files into the `sample-files` folder using the Kali Linux File Manager.
 
 ## 6. Verify the Sample Files and Identify the File Types
 
