@@ -30,6 +30,103 @@ By the end of this practical, you should be able to:
 ## Ethical Considerations
 
 All investigations should be conducted using legally obtained files and with appropriate authorization. Digital evidence should be handled responsibly to preserve its integrity and maintain privacy.
+# Step-by-Step Guide: Extracting Image and Video Metadata Using Kali Linux
+
+## 1. Start Kali Linux
+
+- Start your Kali Linux virtual machine or physical computer.
+- Log in to your account.
+- Open the Terminal using the keyboard shortcut:
+
+```bash
+Ctrl + Alt + T
+```
+
+## 2. Install ExifTool
+
+Run the following command to install ExifTool:
+
+```bash
+sudo apt update
+sudo apt install libimage-exiftool-perl -y
+```
+
+## 3. Verify ExifTool Installation
+
+Run:
+
+```bash
+exiftool -ver
+```
+
+If the installation is successful, the terminal will display the installed ExifTool version.
+
+## 4. Create a Working Directory
+
+Create a folder for the practical:
+
+```bash
+mkdir -p ~/Desktop/Metadata_Lab
+```
+
+Navigate into the folder:
+
+```bash
+cd ~/Desktop/Metadata_Lab
+```
+
+**Note:** If your Kali desktop directory is unavailable, use `mkdir -p ~/Metadata_Lab` instead.
+
+## 5. Add Sample Files
+
+Prepare the following sample files:
+
+- Two JPG/JPEG photographs.
+- One PNG image.
+- One MP4 video.
+
+You may use photographs taken with your phone or other sample media you have permission to examine.
+
+Transfer or copy all the files into the `Metadata_Lab` folder using the Kali Linux File Manager.
+
+## 6. Verify the Sample Files
+
+Run:
+
+```bash
+ls -lh
+```
+
+This command lists the files in the working directory, together with their sizes and permissions.
+
+## 7. Identify the File Types
+
+Run:
+
+```bash
+file *
+```
+
+Examine the output and identify:
+
+- The JPEG image files.
+- The PNG image file.
+- The MP4 video file.
+- The file sizes and formats.
+
+**Observation:** Record the file types and sizes. Note that a file extension does not always indicate its actual file format.
+
+---
+
+## Expected Outcome
+
+At the end of this section, you should have:
+
+1. Kali Linux running.
+2. ExifTool successfully installed.
+3. A working directory named `Metadata_Lab`.
+4. Two JPEG images, one PNG image, and one MP4 video.
+5. Identified and verified the actual file formats.
 
 ## Conclusion
 
