@@ -130,7 +130,7 @@ Extract metadata from each image using ExifTool.
 ```bash
 exiftool photo1.jpg
 ```
-
+<img src="img/jpgimage.png" alt="jpgimage" width="" height="">
 **For PNG:**
 
 ```bash
