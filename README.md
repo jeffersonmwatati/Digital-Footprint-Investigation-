@@ -131,11 +131,13 @@ Extract metadata from each image using ExifTool.
 exiftool photo1.jpg
 ```
 <img src="img/jpgimage.png" alt="jpgimage" width="" height="">
+
 **For PNG:**
 
 ```bash
 exiftool photo2.png
 ```
+<img src="img/pngimage.png" alt="pngimage" width="" height="">
 
 Examine the output and identify the following information where available:
 
@@ -155,6 +157,7 @@ Run ExifTool against the sample MP4 video:
 ```bash
 exiftool video.mp4
 ```
+<img src="img/mp4image.png" alt="mp4image" width="" height="">
 
 Examine the output and identify the following information where available:
 
@@ -183,6 +186,7 @@ Run:
 ```bash
 exiftool -time:all -a -G1 video.mp4
 ```
+<img src="img/videotimestamp.png" alt="videotimestamp" width="" height="">
 
 This command displays available time-related metadata and groups the results by metadata category.
 
@@ -261,6 +265,7 @@ Run:
 ```bash
 ls -lh *.txt
 ```
+<img src="img/metadatafile.png" alt="metadatafile" width="" height="">
 
 ### View the Reports
 
@@ -275,6 +280,7 @@ For the video report:
 ```bash
 cat video_metadata.txt
 ```
+<img src="img/listandopenfile.png" alt="listandopenfile" width="" height="">
 
 **Expected Outcome:** You should have separate text reports containing the extracted image and video metadata.
 
