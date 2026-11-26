@@ -121,10 +121,7 @@ Examine the output and identify:
 
 **Observation:** Record the file types and sizes. Note that a file extension does not always indicate its actual file format.
 
----
-
-
-# 8. Extract Image Metadata
+# 7. Extract Image & Video Metadata
 
 Extract metadata from each image using ExifTool.
 
@@ -151,7 +148,7 @@ Examine the output and identify the following information where available:
 
 **Observation:** Compare the metadata from the JPEG and PNG files. Note that PNG images may contain metadata but do not necessarily have the same EXIF information as JPEG images.
 
-# 9. Extract Video Metadata
+## Extract Video Metadata
 
 Run ExifTool against the sample MP4 video:
 
@@ -191,9 +188,9 @@ This command displays available time-related metadata and groups the results by 
 
 **Observation:** Compare the timestamps and consider whether they necessarily represent the actual time the video was recorded.
 
-# 10. Investigate GPS Location Information
+# 8. Investigate GPS Location Information
 
-GPS metadata can provide useful geographical information about where a photograph may have been captured.
+GPS metadata can provide useful geographical information about where a photograph may have been captured. Do this for all your images and video.
 
 ## Extract GPS Metadata
 
@@ -223,7 +220,7 @@ Look for the following information where available:
 - GPS date and time.
 - GPS positioning information.
 
-**Observation:** If no GPS coordinates are displayed, the photograph may not contain geographical location information.
+**Observation:** If no GPS coordinates are displayed, the photograph may not contain geographical location information. Mine did not have GPS information.
 
 ## Display GPS Coordinates in Numerical Format
 
@@ -237,9 +234,9 @@ The `-n` option displays numerical values instead of formatted GPS coordinates.
 
 **Note:** GPS metadata may be incomplete. The presence of a GPS Version ID alone does not confirm that actual geographical coordinates are available.
 
-# 11. Save Metadata Investigation Results
+# 9. Save Metadata Investigation Results in files
 
-You can save the extracted metadata into text files for documentation and further analysis.
+You can save the extracted metadata into text files for documentation and further analysis. **Try this with all your files and ensure you are in the right folder.** 
 
 ## Export Image Metadata
 
@@ -281,9 +278,9 @@ cat video_metadata.txt
 
 **Expected Outcome:** You should have separate text reports containing the extracted image and video metadata.
 
-# 12. Demonstrate Metadata Removal
+# 10. Demonstrate Metadata Removal
 
-Metadata can sometimes contain sensitive information. In this activity, you will create a copy of an image with its metadata removed.
+Metadata can sometimes contain sensitive information. In this activity, you will create a copy of an image with its metadata removed. **Try this with all your files and ensure you are in the right folder.**
 
 Run:
 
@@ -311,7 +308,7 @@ Compare the results and identify which metadata fields have been removed or reta
 
 **Important:** Always preserve original digital evidence and perform forensic examinations on working copies. Metadata removal may also affect some technical file information, so verify the resulting file.
 
-# 13. Key Lessons and Takeaways
+# 11. Key Lessons and Takeaways
 
 ### Digital Footprints
 
@@ -335,13 +332,6 @@ Through this practical, you have learned how to use Kali Linux and ExifTool to:
 4. Export metadata investigation reports.
 5. Remove metadata from a copy of an image.
 
-Metadata analysis is an important skill in digital forensics, cybersecurity investigations, and digital privacy protection.
-
-
-
-
-## Conclusion
-
-Metadata analysis is an important component of digital forensics. By using Kali Linux and ExifTool, investigators can uncover useful information embedded within multimedia files, helping them understand digital activities and establish potential investigative leads.
+Metadata analysis is an important skill in digital forensics, cybersecurity investigations, and digital privacy protection. By using Kali Linux and ExifTool, investigators can uncover useful information embedded within multimedia files, helping them understand digital activities and establish potential investigative leads.
 
 ## Prepared by Mr. Jefferson Mwatati
