@@ -258,6 +258,8 @@ Run:
 exiftool video.mp4 > video_metadata.txt
 ```
 
+<img src="img/metadatafile.png" alt="metadatafile" width="" height="">
+
 ### Confirm That the Reports Were Created
 
 Run:
@@ -265,7 +267,7 @@ Run:
 ```bash
 ls -lh *.txt
 ```
-<img src="img/metadatafile.png" alt="metadatafile" width="" height="">
+<img src="img/listandopenfile.png" alt="listandopenfile" width="" height="">
 
 ### View the Reports
 
@@ -280,7 +282,7 @@ For the video report:
 ```bash
 cat video_metadata.txt
 ```
-<img src="img/listandopenfile.png" alt="listandopenfile" width="" height="">
+
 
 **Expected Outcome:** You should have separate text reports containing the extracted image and video metadata.
 
