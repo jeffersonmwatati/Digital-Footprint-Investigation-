@@ -296,6 +296,8 @@ exiftool -all= -o cleaned_photo.jpg photo1.jpg
 
 This command creates a new image called `cleaned_photo.jpg` with metadata removed where supported. The original image remains unchanged.
 
+<img src="img/removemetadata.png" alt="removemetadata" width="" height="">
+
 ### Compare the Original and Cleaned Images
 
 Examine the original:
