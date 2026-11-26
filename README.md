@@ -148,7 +148,7 @@ Examine the output and identify the following information where available:
 
 **Observation:** Compare the metadata from the JPEG and PNG files. Note that PNG images may contain metadata but do not necessarily have the same EXIF information as JPEG images.
 
-## Extract Video Metadata
+### Extract Video Metadata
 
 Run ExifTool against the sample MP4 video:
 
@@ -166,7 +166,7 @@ Examine the output and identify the following information where available:
 - Audio information.
 - Device or software information.
 
-## Display Selected Video Properties
+### Display Selected Video Properties
 
 Run:
 
@@ -176,7 +176,7 @@ exiftool -Duration -ImageWidth -ImageHeight -VideoFrameRate video.mp4
 
 Record the information displayed.
 
-## Examine Video Timestamps
+### Examine Video Timestamps
 
 Run:
 
@@ -192,7 +192,7 @@ This command displays available time-related metadata and groups the results by 
 
 GPS metadata can provide useful geographical information about where a photograph may have been captured. Do this for all your images and video.
 
-## Extract GPS Metadata
+### Extract GPS Metadata
 
 Run:
 
@@ -222,7 +222,7 @@ Look for the following information where available:
 
 **Observation:** If no GPS coordinates are displayed, the photograph may not contain geographical location information. Mine did not have GPS information.
 
-## Display GPS Coordinates in Numerical Format
+### Display GPS Coordinates in Numerical Format
 
 Run:
 
@@ -238,7 +238,7 @@ The `-n` option displays numerical values instead of formatted GPS coordinates.
 
 You can save the extracted metadata into text files for documentation and further analysis. **Try this with all your files and ensure you are in the right folder.** 
 
-## Export Image Metadata
+### Export Image Metadata
 
 Run:
 
@@ -246,7 +246,7 @@ Run:
 exiftool photo1.jpg > photo1_metadata.txt
 ```
 
-## Export Video Metadata
+### Export Video Metadata
 
 Run:
 
@@ -254,7 +254,7 @@ Run:
 exiftool video.mp4 > video_metadata.txt
 ```
 
-## Confirm That the Reports Were Created
+### Confirm That the Reports Were Created
 
 Run:
 
@@ -262,7 +262,7 @@ Run:
 ls -lh *.txt
 ```
 
-## View the Reports
+### View the Reports
 
 For the image report:
 
@@ -290,7 +290,7 @@ exiftool -all= -o cleaned_photo.jpg photo1.jpg
 
 This command creates a new image called `cleaned_photo.jpg` with metadata removed where supported. The original image remains unchanged.
 
-## Compare the Original and Cleaned Images
+### Compare the Original and Cleaned Images
 
 Examine the original:
 
