@@ -123,7 +123,220 @@ Examine the output and identify:
 
 ---
 
-## Am still working on this project, soon will update with screenshots and all resources required........
+
+# 8. Extract Image Metadata
+
+Extract metadata from each image using ExifTool.
+
+**For JPEG:**
+
+```bash
+exiftool photo1.jpg
+```
+
+**For PNG:**
+
+```bash
+exiftool photo2.png
+```
+
+Examine the output and identify the following information where available:
+
+- Camera manufacturer and model.
+- Date and time the image was created or captured.
+- Image dimensions (width and height).
+- File format.
+- Software used to create or edit the image.
+- GPS information, if available.
+
+**Observation:** Compare the metadata from the JPEG and PNG files. Note that PNG images may contain metadata but do not necessarily have the same EXIF information as JPEG images.
+
+# 9. Extract Video Metadata
+
+Run ExifTool against the sample MP4 video:
+
+```bash
+exiftool video.mp4
+```
+
+Examine the output and identify the following information where available:
+
+- Video creation date.
+- Video duration.
+- Video dimensions.
+- Frame rate.
+- Video codec.
+- Audio information.
+- Device or software information.
+
+## Display Selected Video Properties
+
+Run:
+
+```bash
+exiftool -Duration -ImageWidth -ImageHeight -VideoFrameRate video.mp4
+```
+
+Record the information displayed.
+
+## Examine Video Timestamps
+
+Run:
+
+```bash
+exiftool -time:all -a -G1 video.mp4
+```
+
+This command displays available time-related metadata and groups the results by metadata category.
+
+**Observation:** Compare the timestamps and consider whether they necessarily represent the actual time the video was recorded.
+
+# 10. Investigate GPS Location Information
+
+GPS metadata can provide useful geographical information about where a photograph may have been captured.
+
+## Extract GPS Metadata
+
+Run:
+
+```bash
+exiftool -gps:all photo1.jpg
+```
+
+For a more detailed examination, run:
+
+```bash
+exiftool -G1 -a -s -gps:all photo1.jpg
+```
+
+To examine all image metadata, run:
+
+```bash
+exiftool -G1 photo1.jpg
+```
+
+Look for the following information where available:
+
+- GPS latitude.
+- GPS longitude.
+- GPS altitude.
+- GPS date and time.
+- GPS positioning information.
+
+**Observation:** If no GPS coordinates are displayed, the photograph may not contain geographical location information.
+
+## Display GPS Coordinates in Numerical Format
+
+Run:
+
+```bash
+exiftool -n -GPSLatitude -GPSLongitude photo1.jpg
+```
+
+The `-n` option displays numerical values instead of formatted GPS coordinates.
+
+**Note:** GPS metadata may be incomplete. The presence of a GPS Version ID alone does not confirm that actual geographical coordinates are available.
+
+# 11. Save Metadata Investigation Results
+
+You can save the extracted metadata into text files for documentation and further analysis.
+
+## Export Image Metadata
+
+Run:
+
+```bash
+exiftool photo1.jpg > photo1_metadata.txt
+```
+
+## Export Video Metadata
+
+Run:
+
+```bash
+exiftool video.mp4 > video_metadata.txt
+```
+
+## Confirm That the Reports Were Created
+
+Run:
+
+```bash
+ls -lh *.txt
+```
+
+## View the Reports
+
+For the image report:
+
+```bash
+cat photo1_metadata.txt
+```
+
+For the video report:
+
+```bash
+cat video_metadata.txt
+```
+
+**Expected Outcome:** You should have separate text reports containing the extracted image and video metadata.
+
+# 12. Demonstrate Metadata Removal
+
+Metadata can sometimes contain sensitive information. In this activity, you will create a copy of an image with its metadata removed.
+
+Run:
+
+```bash
+exiftool -all= -o cleaned_photo.jpg photo1.jpg
+```
+
+This command creates a new image called `cleaned_photo.jpg` with metadata removed where supported. The original image remains unchanged.
+
+## Compare the Original and Cleaned Images
+
+Examine the original:
+
+```bash
+exiftool photo1.jpg
+```
+
+Examine the cleaned image:
+
+```bash
+exiftool cleaned_photo.jpg
+```
+
+Compare the results and identify which metadata fields have been removed or retained.
+
+**Important:** Always preserve original digital evidence and perform forensic examinations on working copies. Metadata removal may also affect some technical file information, so verify the resulting file.
+
+# 13. Key Lessons and Takeaways
+
+### Digital Footprints
+
+Digital files can reveal information beyond what is visible to the human eye. Metadata may expose device details, timestamps, software information, and geographical coordinates.
+
+### Digital Forensics
+
+Metadata analysis can support digital investigations. However, timestamps and other metadata should not automatically be treated as conclusive evidence because they can be modified or manipulated.
+
+### Privacy and Information Security
+
+Individuals and organizations should inspect digital files for sensitive metadata and, where appropriate, remove it before sharing or publishing them.
+
+### Conclusion
+
+Through this practical, you have learned how to use Kali Linux and ExifTool to:
+
+1. Extract image and video metadata.
+2. Examine file properties and timestamps.
+3. Investigate available GPS information.
+4. Export metadata investigation reports.
+5. Remove metadata from a copy of an image.
+
+Metadata analysis is an important skill in digital forensics, cybersecurity investigations, and digital privacy protection.
+
 
 
 
